@@ -2,7 +2,14 @@
 Lecture summary
 
 
-Module 1: Tags
+Module 1: Basic HTMl structure
+  1) always start with <! doctype HTML> - tells the compiler the document should be interpreted in HTML languate
+  2) <html> - <meta> - <head> - <title> - <body> - Typical sequence of a HTML document
+  3) Bloc level elements (e.g. <div>) - Renders in a new line and pushes the following elements to a new line; can contain      both inline and bloc level elements; if the child element is an inline element, then the child is rendered on the same      line
+  4) Inline (e.g. <span>)- Renders on the same line; can contain only inline elements
+  
+  
+Module 2: Tags
 
   Signifiance of tags:
     1) Give structure and readability to code
@@ -32,7 +39,7 @@ Section and article tag:
   <footer> - Contains the footer
   
 
-Module 2: Lists
+Module 3: Lists
   
    Unordered lists:
     1) <ul> 
@@ -54,7 +61,7 @@ Module 2: Lists
        - All elements inside <ul> tags must be a <li> item
        - We can edit the bullet style through CSS
        
-Module 3: Character entity referencing
+Module 4: Character entity referencing
 
   Used to differentiated HTML elements and contents
   Most commonly used character entity referencing:
@@ -67,7 +74,7 @@ Module 3: Character entity referencing
     6) &quot; -> will be interpreted as double quotes
               -> All charater inside the entity reference will be rendered as it irrespective of the browser character set
               
-Module 4: Creating links
+Module 5: Creating links
 
   There are two type of links: 1) Internal link (Links internal to the HTML document) 2) External link (Links that point to   other web pages and documents 3) Fragment identifier (Links to different parts of the same web page)
   
@@ -85,3 +92,18 @@ Module 4: Creating links
           target: "_blank" forces the browser to open the link in a new tab
           title" title of link; used for code readability
     
+    3) Fragement identifier:
+        <a href="#section_name_or_id">
+          -> attributes:
+              href: must have # followed by name or id of the HTML element it is refering to
+          
+  Module 6: Display images
+          
+    <img src="Link.jpg" width="400px" height="235pg" alt ="Pics">
+          -> Functions very similar to link, it is an inline element, hence other element
+          -> Attributes:
+              src: Link to the image (can be internal or external)
+              width: Prevents the web page from being jumpy
+              height: Prevents the web page from being jumpy
+              alt: Specified alternate text if image could not be loaded
+          
