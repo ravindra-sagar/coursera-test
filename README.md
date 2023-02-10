@@ -1,2 +1,87 @@
-# coursera-test
-Coursera test repository
+#coursera- HTML, CSS, Java script
+Lecture summary
+
+
+Module 1: Tags
+
+  Signifiance of tags:
+    1) Give structure and readability to code
+    2) May help in SEO search rankings
+    
+  Head tags:
+    1) <h1> -> Most importanat headings, defenitely helps in SEO rankings
+    2) <h2>
+    3) <h3>
+    4) <h4>
+    5) <h5>
+    6) <h6> -> Least important heading of the document
+    
+Header and navigation tag:
+  1) <header> - Logos, tag lines and as such
+  2) <nav> - Contains links to different parts of the web page
+  
+Section and article tag:
+  1) <section>
+  2) <article>
+      Both tags can be used interchangably. But for code readbility, article tags are placed in side section tags always
+      
+ Aside tag:
+  <aside> - related but not part of the main contect
+ 
+ Footer tag
+  <footer> - Contains the footer
+  
+
+Module 2: Lists
+  
+   Unordered lists:
+    1) <ul> 
+          <li> Item 1 </li>
+          <li> Item 2 </li>
+          <li> Item 3 </li>
+       </ul>
+       - Bulleted list by default
+       - All elements inside <ul> tags must be a <li> item
+       - We can edit the bullet style through CSS
+       
+   Ordered lists:
+    1) <ol> 
+          <li> Item 1 </li>
+          <li> Item 2 </li>
+          <li> Item 3 </li>
+       </o>
+       - Numbered list by default
+       - All elements inside <ul> tags must be a <li> item
+       - We can edit the bullet style through CSS
+       
+Module 3: Character entity referencing
+
+  Used to differentiated HTML elements and contents
+  Most commonly used character entity referencing:
+    1) &lt; -> will be interpreted as <
+    2) &gt; -> will be interpreted as >
+    3) &amp; -> will be interpreted as &
+    4) &copy; -> will be interpreted as the copyright symbol
+    5) &nbsp; -> will be interpreted as a non breaking space
+              -> Caution: Dont use the &nbsp; tag to creat extra space. It is a bad practice. Use span tag with margins
+    6) &quot; -> will be interpreted as double quotes
+              -> All charater inside the entity reference will be rendered as it irrespective of the browser character set
+              
+Module 4: Creating links
+
+  There are two type of links: 1) Internal link (Links internal to the HTML document) 2) External link (Links that point to   other web pages and documents 3) Fragment identifier (Links to different parts of the same web page)
+  
+    1) Internal links:
+      <a href="same-directory.html" title="same dir link"> 
+        -> attributes: 
+            href: Link address 
+            title: title of the link; used for code readability
+        -> <a> is both inline element and bloc level element
+        
+    2) External links:
+      <a href="https://github.com/ravindra-sagar/coursera-test/edit/main/README.md" target="_blank" title="external link">
+        -> attributes:
+          href: Link address
+          target: "_blank" forces the browser to open the link in a new tab
+          title" title of link; used for code readability
+    
