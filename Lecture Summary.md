@@ -86,7 +86,7 @@ Module 5: Creating links
         -> attributes: 
             href: Link address 
             title: title of the link; used for code readability
-        -> <a> is both inline element and bloc level element
+        -> <a> is both inline element and bloc level element; but by default it is displayed as an inline element; we can              display it as an bloc level element using CSS
         
     2) External links:
       <a href="https://github.com/ravindra-sagar/coursera-test/edit/main/README.md" target="_blank" title="external link">
@@ -192,4 +192,47 @@ CSS:
           a) Adjacent selector
           b) Sibling selector
           
+  Module 5: Pseudo-class selectors
+          
+          1) selector:pseudo-class{
+            }
+            -> Used situations where simple selectors cannot be used
+          
+          2) Main pseudo class selector
+            a) :link -> Link
+            b) :visited -> A link that is aldready clicked by the user
+            c) :hover -> When the cursor hovers over the element
+            d) :active -> When the user has clicked the element but not released the click
+            e) :nth-child(element_number) -> applies the style to the nth child of the element. n is specified in                           element_number
+          
+          3) Pseudo selectors can be combined like regular selectors 
+          
+    Module 6: Style placement
+          1) Inline styling. e.g. <p style = "text-aling: centre;"> </p>
+          2) Internal style sheet -> Defining all styles within the same HTML doc
+          3) External style sheet -> e.g. <link rel="stylesheet" href = "stylesheet.css">
+          
+    Module 7: Conflict resolution
+          1) Key properties of conflict resolution:
+              a) Origin -> If there is a conflict, last declaration wins
+              b) Merge -> If there is no conflict, rules merge
+              c) Inheritance -> rules of parent element is inherited by all child elements
+              d) Specificity -> Priority order: Style, ID, Class, # of elements
+              e) important -> attribute_name: attribute_value !important; -> Overides all rules
+    Module 8: The Box model
+          1) In HTML every element is considered a box
+          2) Components of the box:
+              a) Content
+              b) Padding -> Gap between content and border
+              c) Border -> Outline of box
+              d) Margin -> Lies outside border
+          
+          3) When we mention mention width, it is by default taken as the width of the content and not the width of the                 content. We can offset this using setting box-sizing = border-box we can revert back by setting box-sizing =               content-box
+          
+          4) box-sizing is not inheritable, to solve this we can use a global selector *
+          e.g. *{
+            box-sizing=border-box
+          } -> Global selector is not interitance, it is direct selection 
+          
+          5) Horizontal margins are cummulative but vertical margins are not
  
