@@ -219,20 +219,36 @@ CSS:
               c) Inheritance -> rules of parent element is inherited by all child elements
               d) Specificity -> Priority order: Style, ID, Class, # of elements
               e) important -> attribute_name: attribute_value !important; -> Overides all rules
+    
     Module 8: The Box model
+          
           1) In HTML every element is considered a box
+          
           2) Components of the box:
               a) Content
               b) Padding -> Gap between content and border
               c) Border -> Outline of box
               d) Margin -> Lies outside border
           
-          3) When we mention mention width, it is by default taken as the width of the content and not the width of the                 content. We can offset this using setting box-sizing = border-box we can revert back by setting box-sizing =               content-box
+          3) When we mention mention width, it is by default taken as the width of the content and not the width of the content. We can offset this using setting box-            sizing = border-box we can revert back by setting box-sizing = content-box
           
           4) box-sizing is not inheritable, to solve this we can use a global selector *
           e.g. *{
             box-sizing=border-box
           } -> Global selector is not interitance, it is direct selection 
           
-          5) Horizontal margins are cummulative but vertical margins are not
- 
+          5) One of the most commong uses of global selector is resetting the default browser defined styles
+          
+          6) Horizontal margins are cummulative but vertical margins are not (They collapse of each other)
+          
+          7) To deal with content overflow, we use overflow attribute
+          
+          
+          
+    Module 9: The background property
+          1) background-image: url(); -> Style to set background image
+          2) The background image repeats itself to fill the entire space. We can avoid this using backgroupd-repeat rule
+          3) We can also use background rule and pescity all requirements in same line but it will overwrite all previous 
+          rules corresponding to the background
+          
+   Module 10: Positioning
