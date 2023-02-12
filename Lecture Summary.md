@@ -252,3 +252,46 @@ CSS:
           rules corresponding to the background
           
    Module 10: Positioning
+          
+          1) Floating: Places the element in the left or right corner allowing for text and inline elements to wrap around it. Here the element is taken out of the document flow
+          2) Margins of floating elements dont collpase when it is inside an other element but this is not the case with other regular elements
+          3) Relative positioning
+              a) Element is positioned relative to its position in normal document flow
+              b) Elements are not taken out of normal document flow (i.e. even if moved, its original spot is preserved)
+          4) Absolute positioning
+              a) Element is absolute only with respect to an relative or absolute positioned element
+              b) Element taken out of normal document flow
+          
+          
+    Module 11: Responsive design
+          @media (property: value) {
+          p{
+          }
+          } -> if the quety in cresent braces return as true, then the styles inside the media query is applied
+          
+          Exampled of media queries:
+              a) max-width
+              b) min-width
+              c) orientation
+              d) screen
+              e) print
+          
+          5) <meta name="viewport" content="width=device-width, initial-scale=1"> -> Communicates to the browser that it is responsive design and it need to alter the zoom level
+          
+    Module 12: Twitter Bootstrap
+          
+          Declaring bootstrap in HTML document:
+              <link = "stylesheet" href = "css/bootstrap.min.css"> -> Declares bootstrap CSS
+              <link = "stylesheet" href = "css/styles.css"> -> Declares our own style
+              <scrip src="js/jquery-1.11.3.min.js"></script> -> Declares Jquery 
+              <scrip src="js/bootstrap.min.js"></script> -> Declares bootstrap Javacript
+              <script src="js/script.js"></script> -> Declares our own javascript
+          
+          Boostrap grid system:
+              -> Must always be contained within a container class (can be contained or contained-fluid)
+              -> Bootstrap column class:
+                      col-size-span -> size - md, lg (>1200px), span - how many columns (1 to 12)
+              
+          
+          
+          
